@@ -1,0 +1,21 @@
+﻿.mytooltipDanger {
+    position:relative;
+    left:10%;
+    padding:1% 20%;
+    border-radius:4px;
+    background-color:#FDCAC4;
+    color:#ED6160;
+    display:none;
+    
+}
+    .mytooltipDanger::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-top: 9px solid #FDCAC4;
+        position: absolute;
+        bottom: -21%;
+        left: 10%;
+    }
